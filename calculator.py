@@ -1,5 +1,5 @@
-x = int(input("Input the first number ").strip())
-y = int(input("Input the second number ").strip())
+x = float(input("Input the first number ").strip())
+y = float(input("Input the second number ").strip())
 
 operator = input("Input the operation you want to perform ").strip()
  
