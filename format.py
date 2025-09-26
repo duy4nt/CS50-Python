@@ -1,8 +1,12 @@
-name = input("Whats your name?")
+import re
 
-if "," in name:
-    last, first = name.split(", ")
-    name = (f"{first}{last}")
+name = input("Whats your name?").strip()
 
-print(f"Hello, {name}")
+matches =re.search(r"^(.+), *(.+$)", name)
+# The groups start from 1; rather than 0.
 
+if matches:
+    last, first = matches.groups()
+    name = f"{first} {last}"
+
+print(f"Hello {name}")
