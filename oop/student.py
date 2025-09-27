@@ -1,8 +1,3 @@
-class Students:
-    ...
-
-
-
 def main():
     name, house = get_student()
     if name == "Padma":
